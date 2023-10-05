@@ -1,0 +1,1 @@
+![build](https://github.com/LogicFoundry/www/workflows/build/badge.svg?branch=master&event=push)
