@@ -1,1 +1,1 @@
-![build](https://github.com/LogicFoundry/www/workflows/build/badge.svg?branch=master&event=push)
+[![build](https://github.com/ToVisit/tovisit.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/ToVisit/tovisit.github.io/actions/workflows/deploy.yml)
