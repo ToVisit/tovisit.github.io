@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops...</title>
+    <link rel="icon" href="https://images.tovisit.eu/tovisit/logo/png/logo-black.png">
+    <style>
+        body {
+            background-color: #282c34;
+            color: #EC9131;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        #countdown {
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #282c34;
+            color: #EC9131;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            #countdown {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ooops, something went wrong...</h1>
+    <p>It looks like you stumbled onto a restricted or unavailable page. Let us show you the way in:</p>
+    <div id="countdown">10</div>
+
+    <footer>
+        &copy; <span id="copyrightYear"></span> Damian Perera. All rights reserved.
+    </footer>
+
+    <script>
+        // Function to start the countdown and redirect
+        function startCountdown() {
+            var countdownElement = document.getElementById("countdown");
+            var countdown = 10; // Set the initial countdown time in seconds
+
+            var countdownInterval = setInterval(function() {
+                countdown--;
+                countdownElement.textContent = countdown; // Update the countdown display
+
+                if (countdown <= 0) {
+                    clearInterval(countdownInterval); // Stop the countdown
+                    countdownElement.textContent = "Redirecting...";
+                    setTimeout(function() {
+                        window.location.href = "https://tovisit.eu"; // Redirect to another page
+                    }, 1000); // Delay the redirection for 1 second
+                }
+            }, 1000); // Update the countdown every 1000 milliseconds (1 second)
+        }
+
+        // Start the countdown when the page loads
+        window.onload = startCountdown;
+
+        // Update copyright year dynamically
+        document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
