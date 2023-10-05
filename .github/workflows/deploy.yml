@@ -2,7 +2,7 @@ name: build
 on:
   push:
     branches: ["main"]
-    paths-ignore: ["**/*.md", "**/*.yml"] # Ignore changes to markdown and workflow files
+    # paths-ignore: ["**/*.md", "**/*.yml"] # Ignore changes to markdown and workflow files
   workflow_dispatch:
 
 jobs:
@@ -21,21 +21,18 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        working-directory: /
         run: yarn install --frozen-lockfile
       - name: Build
-        working-directory: /
         run: yarn build
       - name: Package
         shell: bash
-        working-directory: /
         run: |
           tar \
             --dereference --hard-dereference \
