@@ -1,12 +1,11 @@
 name: Dependabot Approve & Merge
 on: pull_request
 
-permissions: write-all
-
 jobs:
   dependabot:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
+    permissions: write-all
     steps:
       - name: Fetch Dependabot Metadata
         id: metadata
