@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     permissions: write-all
+    environment: dependabot
     steps:
       - name: Fetch Dependabot Metadata
         id: metadata
