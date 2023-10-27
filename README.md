@@ -1,1 +1,1 @@
-[![build](https://github.com/ToVisit/tovisit.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/ToVisit/tovisit.github.io/actions/workflows/deploy.yml)
+[![build](https://github.com/ToVisit/tovisit.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/ToVisit/tovisit.github.io/actions/workflows/deploy.yml) [![CodeQL](https://github.com/ToVisit/tovisit.github.io/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ToVisit/tovisit.github.io/actions/workflows/github-code-scanning/codeql)
