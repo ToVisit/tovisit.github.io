@@ -1,32 +1,139 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Include the logo color in the overall theme */
+:root {
+  --primary-color: #282c34; /* Sample color from the logo */
+  --text-color: white;
+  --background-color: white;
+  --card-color: #282c34;
+  --card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  top: 0;
+  padding-left: 2vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: left;
 }
 
-.App-link {
-  color: #61dafb;
+header img {
+  margin-right: 1rem;
+  max-width: 80px;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header .logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  header .logo-text {
+    display: none
   }
-  to {
-    transform: rotate(360deg);
+}
+
+footer {
+  bottom: 0;
+  font-size: 1.25vh;
+}
+
+footer span {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 120px; /* Adjust based on header size */
+  padding-bottom: 40px; /* Adjust based on footer size */
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.card img {
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+  background: var(--card-color);
+}
+
+.card-content h2, .card-content p {
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  font-size: 1.5vh;
+}
+
+.card-content h6 {
+  font-weight: normal;
+  font-size: 1.2vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  header img {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+
+  .container {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
