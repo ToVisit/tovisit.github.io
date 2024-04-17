@@ -90,7 +90,7 @@ footer span {
   cursor: no-drop;
 }
 
-.card:hover {
+.selectable:hover {
   transform: translateY(-5px);
   box-shadow: var(--card-hover-shadow);
 }

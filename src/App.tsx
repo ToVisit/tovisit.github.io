@@ -13,7 +13,7 @@ function App() {
       </header>
       <div className="container">
         <div className="grid">
-          <div className="card" onClick={() => { window.open('http://museums.tovisit.eu', '_blank') }}>
+          <div className="card selectable" onClick={() => { window.open('http://museums.tovisit.eu', '_blank') }}>
             <img src="https://images.tovisit.eu/tovisit/cards/museums-low.jpeg" alt="Museums" />
             <div className="card-content">
               <h2>Museums</h2>
@@ -21,7 +21,7 @@ function App() {
               <p>Explore Europe's Finest Museums & Galleries: A Curated Guide</p>
             </div>
           </div>
-          <div className="card" onClick={() => { window.open('http://bars.tovisit.eu', '_blank') }}>
+          <div className="card selectable" onClick={() => { window.open('http://bars.tovisit.eu', '_blank') }}>
             <img src="https://images.tovisit.eu/tovisit/cards/bars-low.jpeg" alt="Bars & Pubs" />
             <div className="card-content">
               <h2>Bars</h2>
