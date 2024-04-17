@@ -101,6 +101,7 @@ footer span {
 .card-content {
   padding: 1rem;
   background: var(--card-color);
+  height: 100%;
 }
 
 .card-content h2, .card-content p {

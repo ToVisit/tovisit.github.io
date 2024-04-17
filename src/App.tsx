@@ -17,14 +17,14 @@ function App() {
             <img src="https://images.tovisit.eu/tovisit/cards/museums-low.jpeg" alt="Museums" />
             <div className="card-content">
               <h2>Museums <h6>museums.tovisit.eu</h6></h2>
-              <p>A curated list of Museums and Galleries to visit in Europe</p>
+              <p>Explore Europe's Finest Museums & Galleries: A Curated Guide</p>
             </div>
           </div>
           <div className="card" onClick={() => { window.open('http://bars.tovisit.eu', '_blank') }}>
             <img src="https://images.tovisit.eu/tovisit/cards/bars-low.jpeg" alt="Bars & Pubs" />
             <div className="card-content">
               <h2>Bars <h6>bars.tovisit.eu</h6></h2>
-              <p>A curated list of Bars and Pubs to visit in Europe</p>
+              <p>Explore Europe's Best: Our Curated List of Top Bars & Pubs</p>
             </div>
           </div>
           <div className="card">
@@ -36,7 +36,7 @@ function App() {
             </div>
           </div>
           <div className="card">
-            <img src="https://t3.ftcdn.net/jpg/06/26/10/98/360_F_626109811_h85C075PLVfX4cc3FEMyYvBiKFfLRyY9.jpg" alt="Cafés" />
+            <img src="https://images.tovisit.eu/tovisit/cards/cafes-low.jpeg" alt="Cafés" />
             <div className="card-content">
               <h2>Cafés <h6>cafes.tovisit.eu</h6></h2>
               <p>Coming Soon</p>
@@ -44,9 +44,9 @@ function App() {
             </div>
           </div>
           <div className="card">
-            <img src="https://www.emeoutlookmag.com/media/ebds-top-10-places-to-visit-in-europe-1580454260.backgroundImage.2x-1536x884.webp" alt="Places" />
+            <img src="https://images.tovisit.eu/tovisit/cards/lakes-low.jpeg" alt="Lakes" />
             <div className="card-content">
-              <h2>Places <h6>places.tovisit.eu</h6></h2>
+              <h2>Lakes <h6>lakes.tovisit.eu</h6></h2>
               <p>Coming Soon</p>
               <br/>
             </div>
