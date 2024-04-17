@@ -29,7 +29,7 @@ function App() {
               <p>Explore Europe's Best: Our Curated List of Top Bars & Pubs</p>
             </div>
           </div>
-          <div className="card">
+          <div className="card coming-soon">
             <img src="https://images.tovisit.eu/tovisit/cards/restaurants-low.jpeg" alt="Restaurants" />
             <div className="card-content">
               <h2>Restaurants</h2>
@@ -38,7 +38,7 @@ function App() {
               <br/>
             </div>
           </div>
-          <div className="card">
+          <div className="card coming-soon">
             <img src="https://images.tovisit.eu/tovisit/cards/cafes-low.jpeg" alt="Cafés" />
             <div className="card-content">
               <h2>Cafés</h2>
@@ -47,7 +47,7 @@ function App() {
               <br/>
             </div>
           </div>
-          <div className="card">
+          <div className="card coming-soon">
             <img src="https://images.tovisit.eu/tovisit/cards/lakes-low.jpeg" alt="Lakes" />
             <div className="card-content">
               <h2>Lakes</h2>

@@ -86,6 +86,10 @@ footer span {
   cursor: pointer;
 }
 
+.coming-soon {
+  cursor: no-drop;
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--card-hover-shadow);
