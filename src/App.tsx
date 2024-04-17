@@ -16,21 +16,24 @@ function App() {
           <div className="card" onClick={() => { window.open('http://museums.tovisit.eu', '_blank') }}>
             <img src="https://images.tovisit.eu/tovisit/cards/museums-low.jpeg" alt="Museums" />
             <div className="card-content">
-              <h2>Museums <h6>museums.tovisit.eu</h6></h2>
+              <h2>Museums</h2>
+              <h6>museums.tovisit.eu</h6>
               <p>Explore Europe's Finest Museums & Galleries: A Curated Guide</p>
             </div>
           </div>
           <div className="card" onClick={() => { window.open('http://bars.tovisit.eu', '_blank') }}>
             <img src="https://images.tovisit.eu/tovisit/cards/bars-low.jpeg" alt="Bars & Pubs" />
             <div className="card-content">
-              <h2>Bars <h6>bars.tovisit.eu</h6></h2>
+              <h2>Bars</h2>
+              <h6>bars.tovisit.eu</h6>
               <p>Explore Europe's Best: Our Curated List of Top Bars & Pubs</p>
             </div>
           </div>
           <div className="card">
             <img src="https://images.tovisit.eu/tovisit/cards/restaurants-low.jpeg" alt="Restaurants" />
             <div className="card-content">
-              <h2>Restaurants <h6>food.tovisit.eu</h6></h2>
+              <h2>Restaurants</h2>
+              <h6>food.tovisit.eu</h6>
               <p>Coming Soon</p>
               <br/>
             </div>
@@ -38,7 +41,8 @@ function App() {
           <div className="card">
             <img src="https://images.tovisit.eu/tovisit/cards/cafes-low.jpeg" alt="Cafés" />
             <div className="card-content">
-              <h2>Cafés <h6>cafes.tovisit.eu</h6></h2>
+              <h2>Cafés</h2>
+              <h6>cafes.tovisit.eu</h6>
               <p>Coming Soon</p>
               <br/>
             </div>
@@ -46,7 +50,8 @@ function App() {
           <div className="card">
             <img src="https://images.tovisit.eu/tovisit/cards/lakes-low.jpeg" alt="Lakes" />
             <div className="card-content">
-              <h2>Lakes <h6>lakes.tovisit.eu</h6></h2>
+              <h2>Lakes</h2>
+              <h6>lakes.tovisit.eu</h6>
               <p>Coming Soon</p>
               <br/>
             </div>

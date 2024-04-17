@@ -105,6 +105,10 @@ footer span {
 }
 
 .card-content h2, .card-content p {
+  margin-bottom: 0.25rem;
+}
+
+.card-content h6 {
   margin-bottom: 1rem;
 }
 
