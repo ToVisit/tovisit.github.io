@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <header>
-        <img src="https://images.tovisit.eu/tovisit/logo/png/logo-no-background.png" alt="Logo" />
+        <img src="https://tovisit.github.io/images//tovisit/logo/png/logo-no-background.png" alt="Logo" />
         <div className="logo-text">
           <h1>Europe</h1>
           <p>Travel · Tours · Tips</p>
@@ -14,7 +14,7 @@ function App() {
       <div className="container">
         <div className="grid">
           <div className="card selectable" onClick={() => { window.open('http://museums.tovisit.eu', '_blank') }}>
-            <img src="https://images.tovisit.eu/tovisit/cards/museums-low.jpeg" alt="Museums" />
+            <img src="https://tovisit.github.io/images//tovisit/cards/museums-low.jpeg" alt="Museums" />
             <div className="card-content">
               <h2>Museums</h2>
               <h6>museums.tovisit.eu</h6>
@@ -22,7 +22,7 @@ function App() {
             </div>
           </div>
           <div className="card selectable" onClick={() => { window.open('http://bars.tovisit.eu', '_blank') }}>
-            <img src="https://images.tovisit.eu/tovisit/cards/bars-low.jpeg" alt="Bars & Pubs" />
+            <img src="https://tovisit.github.io/images//tovisit/cards/bars-low.jpeg" alt="Bars & Pubs" />
             <div className="card-content">
               <h2>Bars</h2>
               <h6>bars.tovisit.eu</h6>
@@ -30,7 +30,7 @@ function App() {
             </div>
           </div>
           <div className="card coming-soon">
-            <img src="https://images.tovisit.eu/tovisit/cards/restaurants-low.jpeg" alt="Restaurants" />
+            <img src="https://tovisit.github.io/images//tovisit/cards/restaurants-low.jpeg" alt="Restaurants" />
             <div className="card-content">
               <h2>Restaurants</h2>
               <h6>food.tovisit.eu</h6>
@@ -39,7 +39,7 @@ function App() {
             </div>
           </div>
           <div className="card coming-soon">
-            <img src="https://images.tovisit.eu/tovisit/cards/cafes-low.jpeg" alt="Cafés" />
+            <img src="https://tovisit.github.io/images//tovisit/cards/cafes-low.jpeg" alt="Cafés" />
             <div className="card-content">
               <h2>Cafés</h2>
               <h6>cafes.tovisit.eu</h6>
@@ -48,7 +48,7 @@ function App() {
             </div>
           </div>
           <div className="card coming-soon">
-            <img src="https://images.tovisit.eu/tovisit/cards/lakes-low.jpeg" alt="Lakes" />
+            <img src="https://tovisit.github.io/images//tovisit/cards/lakes-low.jpeg" alt="Lakes" />
             <div className="card-content">
               <h2>Lakes</h2>
               <h6>lakes.tovisit.eu</h6>
